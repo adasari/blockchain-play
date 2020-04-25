@@ -1,0 +1,18 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_test")
+
+go_library(
+    name = "go_default_library",
+    srcs = [
+        "block.go",
+        "chain.go",
+        "proof.go",
+    ],
+    importpath = "blockchain-play/chain",
+    visibility = ["//visibility:public"],
+)
+
+go_test(
+    name = "go_default_test",
+    srcs = ["chain_test.go"],
+    embed = [":go_default_library"],
+)

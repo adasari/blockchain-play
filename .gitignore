@@ -1,0 +1,13 @@
+.DS_Store
+
+.classpath
+.metadata
+.project
+.settings
+.idea/
+.vscode/
+*.swp
+
+bazel-*
+build-output/
+

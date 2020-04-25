@@ -1,0 +1,13 @@
+load("@bazel_gazelle//:def.bzl", "gazelle")
+
+# gazelle:prefix blockchain-play
+gazelle(
+    name = "gazelle",
+    prefix = "ava",
+)
+
+load("@com_github_bazelbuild_buildtools//buildifier:def.bzl", "buildifier")
+
+buildifier(
+    name = "buildifier",
+)
